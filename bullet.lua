@@ -18,7 +18,7 @@ function Bullet:update(dt)
 end
 
 function Bullet:draw()
-    love.graphics.draw(self.image, self.x, self.y)
+    love.graphics.draw(self.image, self.x - (self.width / 2), self.y - (self.height / 2))
 end
 
 function Bullet:checkCollision(obj)
